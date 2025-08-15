@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FastAPI Test Suite (Classes)" verbose="1" parallel="false">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test name="API Tests (Explicit Classes)">
+    <classes>
+      <class name="tests.UserPositiveTest"/>
+      <class name="tests.BookPositiveTest"/>
+      <class name="tests.UserBookNegativeTest"/>
+      <class name="qa.bookstore.tests.HealthTest"/>
+      <class name="qa.bookstore.tests.BooksCrudTest"/>
+      <class name="qa.bookstore.tests.NegativeTests"/>
+    </classes>
+  </test>
+</suite>

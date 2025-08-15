@@ -1,44 +1,57 @@
-
----
-
-## **`.gitignore`**
-```gitignore
-# OS-specific files
+# ------------------------
+# OS junk
+# ------------------------
 .DS_Store
 Thumbs.db
 
-# Python
+# ------------------------
+# Python (FastAPI server)
+# ------------------------
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.pdb
 .env
-.venv
+.venv/
 env/
 venv/
+.pytest_cache/
+.mypy_cache/
+.coverage*
+coverage/
+*.sqlite3
 
+# ------------------------
 # Java / Maven
+# ------------------------
 target/
 *.class
-*.log
+# (Do NOT ignore *.xml — keep pom.xml and TestNG suites tracked)
 
-# Reports & Build Artifacts
+# ------------------------
+# Reports & build artifacts
+# ------------------------
 test-output/
 allure-results/
 allure-report/
 .allure/
-*.html
-*.xml
-*.json
+# Allure Maven site is under target/site/allure-maven-plugin/ (already covered by target/)
 
-# IDE
+# ------------------------
+# Logs
+# ------------------------
+*.log
+logs/
+
+# ------------------------
+# IDE / Editor
+# ------------------------
 .idea/
 *.iml
 *.ipr
 *.iws
 .vscode/
-
-# Logs
-*.log
-logs/
+.project
+.classpath
+.settings/
