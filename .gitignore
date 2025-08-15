@@ -1,0 +1,44 @@
+
+---
+
+## **`.gitignore`**
+```gitignore
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+.env
+.venv
+env/
+venv/
+
+# Java / Maven
+target/
+*.class
+*.log
+
+# Reports & Build Artifacts
+test-output/
+allure-results/
+allure-report/
+.allure/
+*.html
+*.xml
+*.json
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Logs
+*.log
+logs/
